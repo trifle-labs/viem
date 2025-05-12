@@ -120,7 +120,7 @@ export async function sendCalls<
           {
             atomicRequired: forceAtomic,
             calls,
-            capabilities: formatRequestCapabilities(parameters.capabilities),
+            capabilities: parameters.capabilities,
             chainId: numberToHex(chain!.id),
             from: account?.address,
             id,
